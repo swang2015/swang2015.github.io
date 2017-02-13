@@ -1,0 +1,21 @@
+<footer class="footer">
+  <div class="container">
+    <p class="pull-left">subscribe <a class="noactive" href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <p class="pull-right">© 2016-2017 <a href="https://github.com/swang2015/tranquil-theme" class="noactive" target="_blank">Tranquil Theme</a></p>
+  </div>
+</footer>
+<a id="back_top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+<script id="dsq-count-scr" src="//tranquil-theme.disqus.com/count.js" async></script>
+<script>
+window.onscroll = function() {
+    if(pageYOffset >= 200) {
+        document.getElementById('back_top').style.visibility="visible"
+    } else {
+        document.getElementById('back_top').style.visibility="hidden";
+    }
+};
+document.getElementById('back_top').onclick = function() {
+    scrollTo(document.body, 0, 0);
+}
+</script>

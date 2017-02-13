@@ -1,0 +1,16 @@
+# Site settings
+title: Tranquil
+username: Ashley Wang
+email: swang2015@gmail.com
+description: Ashley's Blog
+baseurl: ""
+url: "http://ashleywang.me"
+
+# Build settings
+markdown: kramdown
+gems: [jekyll-paginate]
+paginate: 3
+paginate_path: "/page:num/"
+
+# Comment thread setting
+disqus_forumname: swang2015
