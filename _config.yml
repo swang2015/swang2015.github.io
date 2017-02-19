@@ -5,6 +5,7 @@ email: swang2015@gmail.com
 description: Ashley's Blog
 baseurl: ""
 url: "http://ashleywang.me"
+aboutme: "A traveller, foodie, designer, and mostly an engineer."
 
 # Build settings
 markdown: kramdown

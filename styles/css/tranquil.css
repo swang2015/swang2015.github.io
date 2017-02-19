@@ -206,7 +206,7 @@ a.tags-lg {
 .decorline2 {
 	background: url('../img/vintage-border2.png') no-repeat 50% 50%;
 	background-size: contain;
-	height: 25px;
+	height: 20px;
 	margin-bottom: 10px;
 }
 
@@ -264,7 +264,6 @@ a.comments {
 .nav-tabs-tranquil > li.active > a,
 .nav-tabs-tranquil > li.active > a:hover,
 .nav-tabs-tranquil > li.active > a:focus {
-  color: #555;
   cursor: default;
   background-color: #fff;
   border: 1px solid transparent;
@@ -280,7 +279,7 @@ a.comments {
 
 .category-subtitle {
 	color: #a7a7a7;
-	padding-bottom: 3px;
+	padding: 0 8px 3px 8px;
 	border-bottom: solid 1px #ddd; 
 }
 
@@ -347,4 +346,74 @@ a.comments {
 
 .widget-list {
 	list-style: none;
+}
+
+.post-content > p, ol, ul, blockquote, dl {
+	font-size: 15px;
+}
+
+.post-content > h1 {
+	font-size: 24px;
+}
+
+.post-content > h2 {
+	font-size: 22px;
+}
+
+.post-content > h3 {
+	font-size: 20px;
+}
+
+.post-content > h4 {
+	font-size: 19px;
+}
+
+.post-content > h5 {
+	font-size: 18px;
+}
+
+.post-content > h6 {
+	font-size: 17px;
+}
+
+.post-content table {
+	width: 100%;
+	margin: 10px 0;
+}
+
+.post-content th {
+	color: #fff;
+	padding: 5px;
+	background: #C39F67;
+	text-transform: uppercase;
+	text-align: center;
+	border: 1px solid #eee;
+}
+
+.post-content td {
+	padding: 5px 20px;
+	background-color: #f5f5f5;
+	border: 1px solid #C39F67;
+}
+
+.post-content blockquote {
+	color: #a7a7a7;
+	border-color: #C39F67;
+	font-style: italic;
+	background: #f5f5f5;
+}
+
+.post-img {
+	text-align: center;
+	margin: 10px 0;
+	font-style: italic;
+}
+
+.post-img img { max-width: 100%; }
+
+.widget-dscrb {
+	display: block;
+	color: #a7a7a7;
+	font-style: italic;
+	margin-bottom: 5px;
 }
