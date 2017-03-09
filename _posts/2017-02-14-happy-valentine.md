@@ -13,4 +13,4 @@ background: /images/love.jpg
 
 > “Wait, let me see how to connet the camera with cellphone..” <br> “Oh..there you go, needa increase ISO to make everything look brighter.”
 
-Unlike other people's whispers of love on this romantic day, two engineers spent half of the dinner time investigating and discussing the camera's usage, structure, brand ... to celebrate their Valentine.
+Unlike other people's whispers of love on this romantic day, two engineers spent half of the dinner time investigating and discussing the camera's usage, structure, brand ... to celebrate their Valentine. ತಎತ
