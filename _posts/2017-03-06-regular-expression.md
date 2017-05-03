@@ -2,7 +2,7 @@
 layout: post
 title:  "Regular Expression in C++11"
 date:   2017-03-06 19:00:00 -0500
-category: programmer
+categories: programmer programming-language
 tags: c++
 ---
 
@@ -32,7 +32,7 @@ Regular expression, sometimes abbreviated to Regex, is a sequence of characters 
 
 `[...]` and `(...)` describe subclass and subpattern respectively, `[^...]` represents class without some characters, and `|` is used for alternation. Now, we are ready to write our own regular expressions. 
 
-Taking email address as an example, the regular expression is `(\\w+[\\.\\w]*)(@)(\\w+\\.[a-zA-Z]{2,})`, here's how it's composed:
+**An example of email validation expression** as we worked out is `(\\w+[\\.\\w]*)(@)(\\w+\\.[a-zA-Z]{2,})`, here's how it's composed:
 
 - 1st subpattern: `(\\w+[\\.\\w]*)`
     - `\\w+` means one or more occurrences of any word.
@@ -81,6 +81,8 @@ Regular expression is a useful string processing utility, but not until C++11 ha
     cout << endl;
 
 ```
+
+In the last example, `$1` and `$3` select first and third subpatterns so that `@` is replaced.
 
 **Extensive readings:**
 

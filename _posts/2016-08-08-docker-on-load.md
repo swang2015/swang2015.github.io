@@ -2,9 +2,9 @@
 layout: post
 title:  "Docker on Load"
 date:   2016-08-08 7:00:00 +0800
-category: programmer
-tags: feature infrastructure
-background: /images/whale.jpg
+categories: programmer infrastructure
+tags: feature docker
+background: /images/bg_whale.jpg
 ---
 
 > I used docker at work a couple days ago, so here to give a short overview on what is docker and how to use it.
@@ -58,13 +58,14 @@ Dockerfile is a starting point to begin using docker (the other is just to pull 
 
 ##### Manipulating images
 
-- It's simple to build image from Dockerfile `docker build -t MYIMG .` -- don't forget the dot at the end of command line.
-- Add tags to image: `docker tag MYIMG NAME[:TAG]`
+- `docker build -t MYIMG .` to build image from Dockerfile -- don't forget the dot at the end of command line.
+- `docker tag MYIMG NAME[:TAG]` to add tags to image.
 - `docker rmi IMG1 IMG2 ...` to remove images.
 
 ##### Container lifecycle
 
-- `docker run IMG` to create and start a container from an image. <br> Options: `-i` for interactive session, `-t` for terminal interface, `-p` for exposing port, `-v` for mounting volumes. <br> E.g. `docker run -it --name=SOMENAME IMG`
+- `docker run IMG` to create and start a container from an image. E.g. `docker run -it --name=SOMENAME IMG`
+	- Options: `-i` for interactive session, `-t` for terminal interface, `-p` for exposing port, `-v` for mounting volumes.
 - `docker start/stop/restart CONTAINER` to start/stop/stop and start a container.
 - `docker attach CONTAINER` to connect to a running container, `CTRL-q` to detach.
 - `docker exec CONTAINER COMMAND` to run a command in a container.
@@ -79,10 +80,10 @@ Dockerfile is a starting point to begin using docker (the other is just to pull 
 
 ##### Registry
 
-- Get pre-built image from registry `docker search NAME`
-- Pull image/repository from registry `docker pull REPOSITORY[:TAG]`, just pull with filename if from Docker Hub.
-- Push local image to registry `docker push REPOSITORY[:TAG]`
-- You may sometimes want to save container's change into a new image before push to registry `docker commit CONTAINER [NAME[:TAG]]`
+- `docker search NAME` to get pre-built image from registry.
+- `docker pull REPOSITORY[:TAG]` to pull image/repository from registry, or just pull with filename if from Docker Hub.
+- `docker push REPOSITORY[:TAG]` to push local image to registry.
+- `docker commit CONTAINER [NAME[:TAG]]` to save container's change into a new image.
 
 
-**Extensive reading:** [More tips](https://github.com/wsargent/docker-cheat-sheet#best-practices), about docker's best practices, security issues and other useful commands.
+**Extensive reading:** [More tips](https://github.com/wsargent/docker-cheat-sheet#best-practices) about docker's best practices, security issues and other useful commands.

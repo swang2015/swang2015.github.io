@@ -11,9 +11,15 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li><a href="{{ '/' | prepend: site.baseurl }}" class="inverse active">Home</a></li>
-        {% for category in site.categories %}
-          <li><a href="{{ site.baseurl }}/category.html#{{ category[0] }}" class="inverse">{{ category[0]] }}</a></li>
-        {% endfor %}
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle inverse" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Programmer<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            {% for category in site.categories %}{% if category[0] != "programmer" and category[0] != "life" %}
+            <li><a href="{{ site.baseurl }}/category.html#{{ category[0] | replace: "-&-", "-" }}" class="inverse text-capitalize">{{ category[0]] | replace: "-", " "  }}</a></li>
+            {% endif %}{% endfor %}
+          </ul>
+        </li>
+        <li><a href="{{ site.baseurl }}/category.html#life" class="inverse active">Life</a></li>
         {% for my_page in site.pages %}
           {% if my_page.title and my_page.title != 'Category' %}
           <li><a href="{{ my_page.url | prepend: site.baseurl }}" class="inverse">{{ my_page.title }}</a></li>

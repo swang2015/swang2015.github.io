@@ -3,7 +3,7 @@ layout: post
 title:  "Happy Valentine!"
 date:   2017-02-14 16:00:00 -0500
 category: life
-background: /images/love.jpg
+background: /images/bg_love.jpg
 ---
 
 <div class="post-img">
