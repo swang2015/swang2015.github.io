@@ -2,7 +2,7 @@
 layout: post
 title:  "Integer to English Words"
 date:   2017-04-10 15:00:00 -0500
-categories: programmer algorithm-&-data-structure
+categories: algorithm-&-data-structure
 tags: c++
 ---
 

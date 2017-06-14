@@ -2,7 +2,7 @@
 layout: post
 title:  "Docker on Load"
 date:   2016-08-08 7:00:00 +0800
-categories: programmer infrastructure
+categories: infrastructure
 tags: feature docker
 background: /images/bg_whale.jpg
 ---

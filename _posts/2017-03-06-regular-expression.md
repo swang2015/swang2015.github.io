@@ -2,7 +2,7 @@
 layout: post
 title:  "Regular Expression in C++11"
 date:   2017-03-06 19:00:00 -0500
-categories: programmer programming-language
+categories: programming-language
 tags: c++
 ---
 

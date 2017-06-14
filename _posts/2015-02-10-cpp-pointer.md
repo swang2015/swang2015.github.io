@@ -2,7 +2,7 @@
 layout: post
 title:  "C++ Quick Tutorial - Pointer"
 date:   2015-02-10 16:00:00 -0800
-categories: programmer programming-language
+categories: programming-language
 tags: c++ feature
 background: /images/bg_futurama2.jpg
 ---
