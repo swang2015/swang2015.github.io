@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "C++ Quick Tutorial - Pointer"
+title:  "C++ Pointer Quick Tutorial"
 date:   2015-02-10 16:00:00 -0800
-categories: programming-language
+categories: misc
 tags: c++ feature
-background: /images/bg_futurama2.jpg
 ---
 
 ## Understanding Pointers
@@ -19,7 +18,7 @@ C++ program is executed with two forms of memory. _Stack_ is the memory set asid
 
 ##### Delaring pointer
 
-a * is the key of declaring pointer. You can declare pointers and nonpointers at the same time.
+a `*` is the key of declaring pointer. You can declare pointers and nonpointers at the same time.
 
 ```c++
 int *pointer, nonpointer;
@@ -39,7 +38,7 @@ Notice that pointer could point to anything without assigning an address, this i
 
 ##### Dereferencing pointer
 
-A pointer is refering to some data, so we need to _dereference_ the pointer to get the data. `*` is the dereference operator. Use `*p_x` just as using an identifier.
+A pointer is refering to some data, so we need to _dereference_ the pointer to get the data. `*` is the **dereference** operator. Use `*p_x` just as using an identifier.
 
 ```c++
 *p_x = 5;

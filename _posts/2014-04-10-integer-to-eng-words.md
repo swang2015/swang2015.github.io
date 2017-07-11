@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Integer to English Words"
-date:   2017-04-10 15:00:00 -0500
-categories: algorithm-&-data-structure
-tags: c++
+date:   2014-04-10 15:00:00 -0500
+categories: misc
+tags: algorithm-basics c++
 ---
 
 ### Problem

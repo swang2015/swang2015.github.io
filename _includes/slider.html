@@ -1,6 +1,6 @@
 <div class="container bottom-space">
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		{% if site.tags.feature.size > 10 %}
+		{% if site.tags.feature.size > 5 %}
 		{% assign length = 5 %}
 		{% else %}
 		{% assign length = site.tags.feature.size %}
@@ -13,13 +13,22 @@
 			{% endunless %}{% endfor %}
 		</ol>
 
+		{% capture time_now %}
+		{{ 'now' | date: "%s" }}
+		{% endcapture %}
+		{% assign time_seed = time_now | modulo: 10 %}
+
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner" role="listbox">
 			{% for i in (0..length) %}{% unless forloop.last %}
 			{% assign mypost = site.tags.feature[i] %}
-			<div class="item {% if i == 0 %} active {% endif %} slider-image" style="background:url('{{ mypost.background | prepend: site.baseurl }}') no-repeat center center; background-size: 100% 100%;">
+			{% assign random = time_seed | plus: i | modulo: 10 %}
+			<div class="item {% if i == 0 %} active {% endif %} slider-image" style="background:url('/images/bg/bg{{ random }}.jpg') no-repeat center center; background-size: 100% 100%;">
 				<div class="carousel-caption slider-title">
-					<p class="post-category-large text-uppercase"><a href="{{ site.baseurl }}/category.html#{{ mypost.categories.last | replace: "-&-", "-" }}" class="white">{{ mypost.categories.last | replace: "-", " "  }}</a></p>
+					<p class="post-category-large text-uppercase"><a href="{{ site.baseurl }}/category.html#{{ mypost.categories[0] }}" class="white">
+						{% if mypost.categories[0] == "misc" %}{% assign cat_name = "miscellaneous" %}{% else %}{% assign cat_name = mypost.categories[0] | replace: "-", " " %}{% endif %}
+						{{ cat_name }}
+					</a></p>
 
 					<h2 class="post-title text-uppercase"><a href="{{ mypost.url | prepend: site.baseurl }}" class="white">{{ mypost.title }}</a></h2>
 

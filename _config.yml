@@ -9,7 +9,7 @@ description: "A traveller, foodie, designer, and mostly an engineer."
 
 # Build settings
 markdown: kramdown
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 paginate: 3
 paginate_path: "/page:num/"
 

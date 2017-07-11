@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Regular Expression in C++11"
-date:   2017-03-06 19:00:00 -0500
-categories: programming-language
-tags: c++
+date:   2016-03-06 19:00:00 -0500
+categories: misc
+tags: c++ regex
 ---
 
 Regular expression, sometimes abbreviated to Regex, is a sequence of characters that describes a search pattern in text. As a simple example, you want to list all the PNG images in a folder and the regular expression would be as easy as `.+\\.png`. Here `.` represent any character and `+` means 1 or more of them. We'll discuss other marks in detail.

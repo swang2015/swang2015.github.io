@@ -10,18 +10,28 @@ title: Category
 		<li role="presentation">
 			<a href="#{{ tag[0] | slugify }}" aria-controls="{{ tag[0] | slugify }}" role="tab" data-toggle="tab" class="inverse-noactive text-capitalize">
 				<span class="category-subtitle">Browsing Category</span>
-				<h2 class="category-title">{{ tag[0] | replace: "-", " "  }}</h2>
+				<h2 class="category-title">
+					{% if tag[0] == "misc" %}{% assign tag_name = "miscellaneous" %}{% else %}{% assign tag_name = tag[0] | replace: "-", " " %}{% endif %}
+					{{ tag_name  }}
+				</h2>
 			</a>
 		</li>
 		{% endfor %}
 	</ul>
 
+	{% capture time_now %}
+	{{ 'now' | date: "%s" }}
+	{% endcapture %}
+	{% assign random = time_now | modulo: 10 %}
+
 	<!-- Tab panes -->
 	<div class="tab-content bottom-space">
 		{% for tag in site.categories %}
+		{% assign length = tag[1].size %}
 		<div role="tabpanel" class="tab-pane" id="{{ tag[0] | slugify }}">
 			<ul class="post-list">
-				{% for my_post in tag[1] %}
+				{% for i in (0..length) %}{% unless forloop.last %}
+				{% assign my_post = tag[1][i] %}
 				<li class="post-block text-center">
 					<div class="row">
 						<div class="col-md-8">
@@ -35,7 +45,12 @@ title: Category
 						</div>
 
 						<div class="col-md-4">
-							{% if my_post.background %}{% assign bg = my_post.background %}{% else %}{% assign bg = "/images/bg_default.jpg" %}{% endif %}
+							{% if my_post.background %}
+							{% assign bg = my_post.background %}
+							{% else %}
+							{% assign random = random | plus: i | modulo: 10 %}
+							{% assign bg = "/images/bg/bg" | append: random | append: ".jpg" %}
+							{% endif %}
 							<img class="post-bg" src="{{ bg | prepend: site.baseurl }}"></img>
 						</div>
 					</div>
@@ -56,7 +71,7 @@ title: Category
 				<a href="{{ site.baseurl }}{{ post.url }}">
 					<li><h4 class="post-title">{{ post.title }}</h4></li>
 				</a>
-				{% endfor %}
+				{% endunless %}{% endfor %}
 			</ul>
 		</div>
 		{% endfor %}
