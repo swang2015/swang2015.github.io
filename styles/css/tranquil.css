@@ -135,6 +135,10 @@ a.noactive:focus {
 	margin-bottom: 30px;
 }
 
+.post-bg {
+	width: 100%;
+}
+
 .post-category {
 	text-transform: uppercase;
 	color: #C39F67;

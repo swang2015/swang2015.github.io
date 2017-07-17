@@ -3,6 +3,7 @@ layout: default
 ---
 <div class="row">
 	<div class="col-md-9">
+		{% if page.background %}<img src="{{ page.background | prepend: site.baseurl }}" class="post-bg">{% endif %}
 		<article itemscope itemtype="http://schema.org/BlogPosting" class="post-block text-center">
 			<p class="post-category"><a href="/category.html#{{ page.category }}">{{ page.category }}</a></p>
 			<h3 class="post-title" itemprop="name headline">
