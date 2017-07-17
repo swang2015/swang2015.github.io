@@ -14,7 +14,7 @@ background: /images/bg/bg_whale.jpg
 Docker is a hot containerization platform which wraps all the dependencies in an execution system and is easy to pack and ship as you go. What makes Docker so popular? Comparing to virtual machines, Docker is more portable and efficient. In Docker, operating systems and kernels are abstracted and shared, applications and everything else (e.g. code, runtime, system tools, system libraries) run in isolated space.
 
 <div class="post-img">
-	<img src="/images/docker_what.png" width="50%">
+	<img src="/images/infra/docker_what.png" width="50%">
 </div>
 
 Docker automates the process of delivering software applications in a repeatable way which allows effective distributed system to get more deployments in a cloud. Its lightweight nature makes it easy for developers to quickly create and run containered applications. In a *container* applications are isolated and run securely with complete dependancies. You can run many containers simultaneously on a host. Each container is created from a Docker *image*. Here are some concepts that you need to know.
@@ -37,7 +37,7 @@ Docker automates the process of delivering software applications in a repeatable
 After successfully installed docker on your machine, run `docker` in terminal to list all its options and commands. There are around 40 commands.
 
 <div class="post-img">
-	<img src="/images/docker_usage.png" width="65%">
+	<img src="/images/infra/docker_usage.png" width="65%">
 </div>
 
 ### Dockerfile

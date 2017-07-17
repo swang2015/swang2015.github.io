@@ -478,6 +478,11 @@ pre code {
     white-space: pre;
 }
 
+pre.console{
+	color: #fff;
+	background-color: #BC8CBC;
+}
+
 .post-content hr {
 	border-color: #a7a7a7;
 }
