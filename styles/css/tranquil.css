@@ -137,6 +137,8 @@ a.noactive:focus {
 
 .post-bg {
 	width: 100%;
+	max-height: 350px;
+
 }
 
 .post-category {
@@ -404,7 +406,7 @@ a.comments {
 }
 
 .post-content > p, ol, ul, blockquote, dl {
-	font-size: 15px;
+	font-size: 16px;
 }
 
 .post-content > h1 {
@@ -461,10 +463,16 @@ a.comments {
 .post-img {
 	text-align: center;
 	margin: 10px 0;
-	font-style: italic;
 }
 
 .post-img img { max-width: 100%; }
+
+p.post-cap {
+	color: #777;
+	font-size: 14px;
+	text-align: center;
+	font-style: italic;
+}
 
 .widget-dscrb {
 	display: block;

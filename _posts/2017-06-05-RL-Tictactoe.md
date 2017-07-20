@@ -18,7 +18,7 @@ We can describe the RL process as follows. At each step, the agent receives obse
 	<img src="/images/rl/rl_model.jpeg" width="40%">
 </div>
 
-A __policy__ is the agent's behavior, it's a mapping from state to action. Whereas the reward signal gives immediate score, a __value function__ specifies a long-term desirability. Even a state yiels low rewards it might still have high value because its consequent states yield high rewards. Let's illustrate the idea with a really simple example ([with code](https://github.com/swang2015/data-science-messy-notes/blob/master/reinforcement-learning/tictactoe.py)).
+A __policy__ is the agent's behavior, it's a mapping from state to action. Whereas the reward signal gives immediate score, a __value function__ specifies a long-term desirability. Even a state yiels low rewards it might still have high value because its consequent states yield high rewards. Let's illustrate the idea with a really simple example ([with code](https://github.com/swang2015/data-science-messy-snippets/blob/master/examples/tictactoe.py)).
 
 ## A Simple Example: Training a Tic-Tac-Toe Player <sup>[1](#resources)</sup>
 
@@ -30,7 +30,7 @@ Tic-Tac-Toe is a classic child's game. Two players fullfill a 3x3 board in turn 
 
 How do we apply RL to solve this problem? In this game, the states of the board are finite. We search a space of _policies_ and greedily select the best one with high potential to beat the opponent. The chance of winning for each policy is estimated via _value function_. As the agent plays, value of a state _V(s)_ is backed up to be closer to the value after the best move _V(s')_, which can be written as @@V(s)\leftarrow V(s)+\alpha[V(s')-V(s)]@@. _α_ is the _step-size parameter_ and influences the learning rate. This update method is an example of _temporal-difference_ learning. When the system's random number is below a threshold ε, the agent ignores suggested move and takes a _exploratory move_.
 
-Up til now, our agent is well-trained and ready to play with. [Take a try](https://github.com/swang2015/data-science-messy-notes/blob/master/reinforcement-learning/tictactoe.py)! This example illustrates how a RL method works -- there's no supervisor or prior knowledge, the agent learns from interacting with environment with feedback. It's also a remarkable feature that a RL agent can consider the delayed effects. It's like it looks ahead for the best choice over a time span to achieve its goal in the future.
+Up til now, our agent is well-trained and ready to play with. [Take a try](https://github.com/swang2015/data-science-messy-snippets/blob/master/examples/tictactoe.py)! This example illustrates how a RL method works -- there's no supervisor or prior knowledge, the agent learns from interacting with environment with feedback. It's also a remarkable feature that a RL agent can consider the delayed effects. It's like it looks ahead for the best choice over a time span to achieve its goal in the future.
 
 
 ## Discussions
