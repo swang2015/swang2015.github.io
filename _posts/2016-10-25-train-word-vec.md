@@ -12,7 +12,7 @@ In basic NLP tasks, each word is treated as discrete atomic unit. The word vecto
 
 People come up with ideas of distributed word feature representations which describes different aspects of the word and each word is associated with a point in the vector space. The dimensionality of the representations is then much smaller. These dense vectors can be used to discover similarities between terms or as input of other NLP models.
 
-### Neural Netword Language Model
+### Neural Network Language Model
 
 Bengio et al. [proposed a framework](http://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf) to build language model with neural network. The basic idea can be summarized as below:
 
@@ -23,7 +23,7 @@ Bengio et al. [proposed a framework](http://www.jmlr.org/papers/volume3/bengio03
 The neural architecture looks like below, _C(w<sub>t</sub>)_ is the feature vector:
 
 <div class="post-img">
-	<img src="/images/nlp/neural-architecture.png" width="50%">
+	<img src="/images/nlp/neural-lm-architecture.png" width="50%">
 </div>
 
 ### Word2Vec Model
