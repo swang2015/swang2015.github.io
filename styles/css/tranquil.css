@@ -10,8 +10,8 @@
 }
 
 .docs-title {
-	padding-top: 10rem;
-	padding-bottom: 5rem;
+	padding-top: 120px;
+	padding-bottom: 60px;
 	margin: 10px 0 20px 0;
 }
 
@@ -377,12 +377,13 @@ a.comments {
 
 @media (max-width: 539px) {
 	.slider-image { height:220px; }
-	.slider-title { top: 25px; padding-top: 20px; bottom: 50px; }
+	.slider-title { top: 25px; padding-top: 20px; bottom: 30px; }
 	.decorline2 { display: none; }
 	h1 { font-size: 26px; }
 	h2 { font-size: 20px; }
 	.archive-content { border-left:0; }
 	#back_top { display: none !important; }
+	.carousel-indicators { display: none; }
 }
 
 @media (min-width: 540px) and (max-width: 991px) {

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Reinforcement Learning for Beginners: Tic-Tac-Toe"
+title:  "Reinforcement Learning for Beginners"
 date:   2017-06-05 7:00:00 +0800
 categories: machine-learning
 tags: feature reinforcement-learning code-example
