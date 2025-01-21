@@ -1,5 +1,5 @@
 # Site settings
-title: Tranquil
+title: Latest Tech News
 slogan: Ashley's Blog
 username: Ashley Wang
 email: swang2015@gmail.com
@@ -10,7 +10,7 @@ description: "A data scientist, foodie, <br> &#9829; snowboarding and travelling
 # Build settings
 markdown: kramdown
 plugins: [jekyll-paginate]
-paginate: 3
+paginate: 20
 paginate_path: "/page:num/"
 
 # Comment thread setting
