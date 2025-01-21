@@ -1,0 +1,20 @@
+.docs-title {
+	padding-top: 0;
+	padding-bottom: 0;
+	margin: 8px 0 10px 0;
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.docs-title-background {
+    background-color: #66b539;
+    background-clip: content-box;
+    padding-bottom: 10px;
+}
+
+.docs-title > a,
+.docs-title > a.noactive:hover,
+.docs-title > a.noactive:focus {
+	color: #E8F7DD;
+	text-decoration: none;
+}
