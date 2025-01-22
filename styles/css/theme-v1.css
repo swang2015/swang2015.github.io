@@ -3,6 +3,15 @@ a.noactive:focus {
 	text-decoration: none;
 }
 
+.main a {
+	color: #67A73C;
+}
+
+.main a:hover,
+.main a:focus {
+	color: #687E44;
+}
+
 .docs-title {
 	padding-top: 0;
 	padding-bottom: 0;
@@ -17,7 +26,9 @@ a.noactive:focus {
     padding-bottom: 10px;
 }
 
-.docs-title > a{
+.docs-title > a,
+.docs-title > a:hover,
+.docs-title > a:focus {
 	color: #E8F7DD;
 }
 
@@ -31,10 +42,6 @@ a.noactive:focus {
 	background: rgba(238, 238, 238, 0.5);
 	display: inline-block;
     margin-top: -60px;
-    /* padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 0px;
-    margin-bottom: 12px; */
 }
 
 .slider-title {
@@ -51,7 +58,9 @@ a.noactive:focus {
 	}
 }
 
-.slider-title > a {
+.slider-title > a,
+.slider-title > a:hover,
+.slider-title > a:focus {
 	color: #696249;
 }
 
@@ -62,6 +71,7 @@ a.noactive:focus {
     z-index: 5;
     display: inline-block;
     margin-top: -10px;
+	color: #f5f5f5;
 }
 
 .carousel-control .fa-chevron-left {
@@ -72,4 +82,75 @@ a.noactive:focus {
 .carousel-control .fa-chevron-right {
 	right: 50%;
 	margin-right: -10px;
+}
+
+.post-block {
+	background-color: #eee;
+	padding: 5px 15px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+.post-list {
+	padding: 0;
+	list-style: none;
+}
+
+.post-title-line {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.post-title {
+	font-size: 18px;
+}
+
+.post-date {
+	font-size: 16px;
+	color: #374148;
+}
+
+.post-meta {
+	margin-bottom: 5px;
+}
+
+.post-tags {
+    border: 1px solid;
+    background: #f5f5f5;
+    display: inline-block;
+    padding: 1px 5px;
+	font-size: 14px;
+}
+
+.post-comment-label {
+	font-style: italic;
+	font-size: 14px;
+}
+
+.paginate {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#back_top {
+	display: inline-block;
+	visibility: hidden;
+	height: 35px;
+	width: 35px;
+	font-size: 30px;
+	position: fixed;
+	bottom: 60px;
+	right: 20px;
+	opacity: 0.6;
+	background-color: #f5f5f5;	
+}
+
+#back_top:hover, 
+#back_top:focus {
+	color: #333;
+}
+
+@media (max-width: 539px) {
+	#back_top { display: none !important; }
 }
