@@ -132,6 +132,44 @@ a.noactive:focus {
 	font-size: 14px;
 }
 
+.post-content table {
+	margin: 10px auto;
+}
+
+.post-content th {
+	color: #fff;
+	padding: 5px;
+	background: #66b539;
+	text-transform: uppercase;
+	text-align: center;
+	border: 1px solid #67A73C;
+}
+
+.post-content td {
+	padding: 5px 20px;
+	background-color: #fffffb;
+	border: 1px solid #67A73C;
+	max-width: 40%;
+}
+
+.post-content blockquote {
+	color: #a7a7a7;
+	border-color: #66b539;
+	font-style: italic;
+	background: #fffffb;
+	font-size: 16px;
+}
+
+code {
+	color: #67A73C;
+	background-color: #f5f5f5;
+}
+
+pre.console{
+	color: #fff;
+	background-color: #696249;
+}
+
 .paginate {
     padding-top: 5px;
     padding-bottom: 5px;
