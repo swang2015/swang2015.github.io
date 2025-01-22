@@ -164,3 +164,30 @@ a.noactive:focus {
 	background: #151B1F;
 	color: #7B7B7B;
 }
+
+.page-title {
+	font-size: 22px;
+}
+
+.tag-post-list {
+	padding: 0;
+	list-style: none;
+}
+
+.tag-title {
+	font-size: 18px;
+}
+
+.tag-post-title {
+	font-size: 14px;
+}
+
+.tag-post-date {
+	font-size: 14px;
+	color: #374148;
+}
+
+.tab-space {
+	margin-right: 5px;
+	margin-left: 5px;
+}
