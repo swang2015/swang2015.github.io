@@ -1,45 +1,7 @@
-<header class="navbar navbar-default navbar-fixed-top" style="background-color:#fff;">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="{{ '/' | prepend: site.baseurl }}" class="inverse active">Home</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle inverse" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Science<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            {% for category in site.categories %}{% if category[0] != "life" and category[0] != "misc" %}
-            <li><a href="{{ site.baseurl }}/category.html#{{ category[0] }}" class="inverse text-capitalize">{{ category[0]] | replace: "-", " "  }}</a></li>
-            {% endif %}{% endfor %}
-          </ul>
-        </li>
-        <li><a href="{{ site.baseurl }}/category.html#misc" class="inverse active">Misc</a></li>
-        <!--li><a href="{{ site.baseurl }}/category.html#life" class="inverse active">Life</a></li-->
-        {% for my_page in site.pages %}
-          {% if my_page.title and my_page.title != 'Category' %}
-          <li><a href="{{ my_page.url | prepend: site.baseurl }}" class="inverse">{{ my_page.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-      <!--ul class="nav navbar-nav navbar-right">
-          <li class="social-li">
-            {% for social in site.data.social %}
-            <a class="social-a inverse" href="{{ social.url }}" _target="_blank"><i class="fa fa-{{ social.name }}"></i></a>
-            {% endfor %}
-          </li>
-      </ul-->
+<header>
+  <div class="text-center">
+    <div class="container docs-title-background">
+      <h1 class="docs-title"><a class="noactive text-capitalize" href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a></h1>
     </div>
   </div>
 </header>
-
-<div class="text-center">
-  <div class="container">
-    <h1 class="docs-title"><a class="docs-title-border noactive" href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a></h1>
-  </div>
-</div>
