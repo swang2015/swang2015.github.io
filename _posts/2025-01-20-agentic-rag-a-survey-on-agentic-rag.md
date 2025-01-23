@@ -4,7 +4,7 @@ title:  "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG"
 date:   2025-01-20 16:00:00 -0500
 link: https://arxiv.org/abs/2501.09136
 categories: AGI
-tags: NLU RAG survey
+tags: nlu rag survey feature
 ---
 
 Large Language Models (LLMs) have revolutionized artificial intelligence (AI) by enabling human like text generation and natural language understanding. However, their reliance on static training data limits their ability to respond to dynamic, real time queries, resulting in outdated or inaccurate outputs. Retrieval Augmented Generation (RAG) has emerged as a solution, enhancing LLMs by integrating real time data retrieval to provide contextually relevant and up-to-date responses. Despite its promise, traditional RAG systems are constrained by static workflows and lack the adaptability required for multistep reasoning and complex task management.

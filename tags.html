@@ -11,12 +11,12 @@ title: Tags
 	<div class="post-content">
 		<div class="tags-expo-list">
 			{% for tag in site.tags %}{% if tag[0] != "feature" %}
-			<a href="#{{ tag[0] | slugify }}" class="post-tags noactive">{{ tag[0] }}</a>
+			<a href="#{{ tag[0] | slugify }}" class="post-tags noactive text-lowercase">{{ tag[0] }}</a>
 			{% endif %}{% endfor %}
 		</div>
 		<div>
 			{% for tag in site.tags %}{% if tag[0] != "feature" %}
-			<h3 id="{{ tag[0] | slugify }}" class="tag-title">{{ tag[0] }}</h3>
+			<h3 id="{{ tag[0] | slugify }}" class="tag-title text-lowercase">{{ tag[0] }}</h3>
 			<ul class="tag-post-list">
 				{% for post in tag[1] %}
 				<li>
