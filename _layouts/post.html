@@ -2,13 +2,10 @@
 layout: default
 ---
 <div class="row">
-	<div class="col-md-9">
-		{% if page.background %}<img src="{{ page.background | prepend: site.baseurl }}" class="post-bg">{% endif %}
-		<article itemscope itemtype="http://schema.org/BlogPosting" class="post-block text-center">
-			<p class="post-category"><a href="/category.html#{{ page.category }}">{{ page.category }}</a></p>
-			<h3 class="post-title" itemprop="name headline">
-				<a href="{{ page.url | prepend: site.baseurl }}" class="inverse-noactive">{{ page.title }}</a>
-				<div class="decorline3"></div>
+	<div class="col-md-12">
+		<article itemscope itemtype="http://schema.org/BlogPosting" class="post-block">
+			<h3 class="post-title text-capitalize" itemprop="name headline">
+				<a href="{{ my_post.link }}" class="noactive">{{ page.title }}</a>
 			</h3>
 
 			<p class="post-date">
@@ -19,24 +16,18 @@ layout: default
 				{{ content }}
 			</div>
 
-			<div class="decorline">
-				<p class="pull-left">{% if page.tags[0] %}
-				<a href="{{ site.baseurl }}/tags"><i class="fa fa-tags tags"></i></a>
+			<p class="pull-left">
+				{% if page.tags[0] %}
 				{% for tag in page.tags %}{% if tag != "feature" %}
-				<a href="{{ site.baseurl }}/tags#{{ tag }}" class="tags">{{ tag }}</a>
+				<a href="{{ site.baseurl }}/tags#{{ tag }}" class="post-tags">{{ tag }}</a>
 				{% endif %}{% endfor %}
-				{% endif %}</p>
-			</div>
+				{% endif %}
+			</p>
 
 			{% if site.disqus_forumname %}
 			{% include comments.html %}
 			{% endif %}
 		</article>
-	</div>
-	<div class="col-md-3">
-		<div class="sidebar center-block">
-			{% include widget_blog.html %}
-		</div>
 	</div>
 </div>
 

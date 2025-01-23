@@ -1,51 +1,37 @@
 <div class="container bottom-space">
-	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		{% if site.tags.feature.size > 5 %}
-		{% assign length = 5 %}
+	<div id="carousel-main" class="carousel slide" data-ride="carousel">
+		{% if site.tags.feature.size > 3 %}
+		{% assign length = 3 %}
 		{% else %}
 		{% assign length = site.tags.feature.size %}
 		{% endif %}
 
-		<!-- Indicators -->
-		<ol class="carousel-indicators">
-			{% for i in (0..length) %}{% unless forloop.last %}
-			<li data-target="#carousel-example-generic" data-slide-to="{{i}}" class="{% if i == 0 %} active {% endif %}"></li>
-			{% endunless %}{% endfor %}
-		</ol>
-
 		{% capture time_now %}
 		{{ 'now' | date: "%s" }}
 		{% endcapture %}
-		{% assign time_seed = time_now | modulo: 10 %}
 
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner" role="listbox">
 			{% for i in (0..length) %}{% unless forloop.last %}
 			{% assign mypost = site.tags.feature[i] %}
-			{% assign random = time_seed | plus: i | modulo: 10 %}
-			<div class="item {% if i == 0 %} active {% endif %} slider-image" style="background:url('/images/bg/bg{{ random }}.jpg') no-repeat center center; background-size: 100% 100%;">
-				<div class="carousel-caption slider-title">
-					<p class="post-category-large text-uppercase"><a href="{{ site.baseurl }}/category.html#{{ mypost.categories[0] }}" class="white">
-						{% if mypost.categories[0] == "misc" %}{% assign cat_name = "miscellaneous" %}{% else %}{% assign cat_name = mypost.categories[0] | replace: "-", " " %}{% endif %}
-						{{ cat_name }}
-					</a></p>
-
-					<h2 class="post-title text-uppercase"><a href="{{ mypost.url | prepend: site.baseurl }}" class="white">{{ mypost.title }}</a></h2>
-
-					<img src="{{ '/styles/img/vintage-border2.png' | prepend: site.baseurl }}" class="shadow decorline2">
-
-					<p class="post-date-large">{{ mypost.date | date: "%B %-d, %Y" }}</p>
+			<div class="item {% if i == 0 %} active {% endif %} slider-image" style="background:url('/images/bg/bg{{ i }}.jpg') no-repeat center center; background-size: 100% auto;">
+				<div class="carousel-caption slider-title-background">
+					<h2 class="slider-title text-uppercase">
+						<a href="{{ mypost.url | prepend: site.baseurl }}" class="noactive">
+							{{ mypost.title }}
+						</a>
+					</h2>
 				</div>
 			</div>
 			{% endunless %}{% endfor %}
 		</div>
 
 		<!-- Controls -->
-		<a class="left carousel-control white" href="#carousel-example-generic" role="button" data-slide="prev">
+		<a class="left carousel-control" href="#carousel-main" role="button" data-slide="prev">
 			<span class="fa fa-chevron-left" aria-hidden="true"></span>
 			<span class="sr-only">Previous</span>
 		</a>
-		<a class="right carousel-control white" href="#carousel-example-generic" role="button" data-slide="next">
+		<a class="right carousel-control" href="#carousel-main" role="button" data-slide="next">
 			<span class="fa fa-chevron-right" aria-hidden="true"></span>
 			<span class="sr-only">Next</span>
 		</a>

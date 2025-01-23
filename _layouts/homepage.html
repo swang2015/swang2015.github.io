@@ -3,20 +3,14 @@
 
 {% include head.html %}
 
-<body class="tranquil-body">
+<body class="main">
 	{% include header.html %}
 	{% include slider.html %}
 
-	<div class="container bottom-space">
+	<div class="container">
 		<div class="row">
-			<div class="col-md-9">
+			<div class="col-md-12">
 				{{ content }}
-			</div>
-			<div class="col-md-3">
-				<div class="sidebar center-block">
-					{% include widget_about.html %}
-					{% include widget_blog.html %}
-				</div>
 			</div>
 		</div>
 	</div>
