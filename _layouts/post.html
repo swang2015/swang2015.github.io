@@ -5,12 +5,12 @@ layout: default
 	<div class="col-md-12">
 		<article itemscope itemtype="http://schema.org/BlogPosting" class="post-block">
 			<h3 class="post-title text-capitalize" itemprop="name headline">
-				<a href="{{ my_post.link }}" class="noactive">{{ page.title }}</a>
+				<a href="{{ page.link }}" class="noactive">{{ page.title }}</a>
+				<span class="tab-space"></span>
+				<small class="post-date">
+					<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
+				</small>
 			</h3>
-
-			<p class="post-date">
-				<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
-			</p>
 
 			<div class="post-content" itemprop="articleBody">
 				{{ content }}
