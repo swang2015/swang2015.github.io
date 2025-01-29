@@ -4,11 +4,7 @@ title:  "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG"
 date:   2025-01-20 16:00:00 -0500
 link: https://arxiv.org/abs/2501.09136
 categories: AGI
-tags: NLU RAG survey
+tags: nlu rag survey feature
 ---
 
-Large Language Models (LLMs) have revolutionized artificial intelligence (AI) by enabling human like text generation and natural language understanding. However, their reliance on static training data limits their ability to respond to dynamic, real time queries, resulting in outdated or inaccurate outputs. Retrieval Augmented Generation (RAG) has emerged as a solution, enhancing LLMs by integrating real time data retrieval to provide contextually relevant and up-to-date responses. Despite its promise, traditional RAG systems are constrained by static workflows and lack the adaptability required for multistep reasoning and complex task management.
-
-Agentic Retrieval-Augmented Generation (Agentic RAG) transcends these limitations by embedding autonomous AI agents into the RAG pipeline. These agents leverage agentic design patterns reflection, planning, tool use, and multiagent collaboration to dynamically manage retrieval strategies, iteratively refine contextual understanding, and adapt workflows to meet complex task requirements. This integration enables Agentic RAG systems to deliver unparalleled flexibility, scalability, and context awareness across diverse applications.
-
-This survey provides a comprehensive exploration of Agentic RAG, beginning with its foundational principles and the evolution of RAG paradigms. It presents a detailed taxonomy of Agentic RAG architectures, highlights key applications in industries such as healthcare, finance, and education, and examines practical implementation strategies. Additionally, it addresses challenges in scaling these systems, ensuring ethical decision making, and optimizing performance for real-world applications, while providing detailed insights into frameworks and tools for implementing Agentic RAG.
+This survey explores the fundational principles, taxonomy, and applications of Agentic RAG. It provides a comprehensive overview of RAG paradigms, alongside their evolution into Agentic RAG systems. Key contributions include a detailed taxonomy of Agentic RAG frameworks, applications across domains and insights into implementation strategies, benchmarks, and ethical considerations.

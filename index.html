@@ -14,7 +14,7 @@ layout: homepage
         <p class="post-meta">
           {% if my_post.tags[0] %}
           {% for tag in my_post.tags %}{% if tag != "feature" %}
-          <a href="{{ site.baseurl }}/tags#{{ tag }}" class="post-tags noactive">{{ tag }}</a>
+          <a href="{{ site.baseurl }}/tags#{{ tag }}" class="post-tags noactive text-lowercase">{{ tag }}</a>
           {% endif %}{% endfor %}
           {% endif %}
           <span class="tab-space"></span>
