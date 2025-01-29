@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Retrieval-Augmented Generation with Graphs (GraphRAG)"
-date:   2025-01-20 16:25:00 -0500
+date:   2025-01-20 16:25:00 0000
 link: https://arxiv.org/abs/2501.00309
 category: AGI
 tags: nlu rag survey
