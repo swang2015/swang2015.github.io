@@ -14,7 +14,7 @@
 		<div class="carousel-inner" role="listbox">
 			{% for i in (0..length) %}{% unless forloop.last %}
 			{% assign mypost = site.tags.feature[i] %}
-			<div class="item {% if i == 0 %} active {% endif %} slider-image" style="background:url('/images/bg/bg{{ i }}.jpg') no-repeat center center; background-size: 100% auto;">
+			<div class="item {% if i == 0 %} active {% endif %} slider-image" style="background:url('/images/bg/bg{{ i }}.jpg') no-repeat center center; background-size:cover;">
 				<div class="carousel-caption slider-title-background">
 					<h2 class="slider-title text-uppercase">
 						<a href="{{ mypost.url | prepend: site.baseurl }}" class="noactive">
