@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG"
-date:   2025-01-20 16:00:00 -0500
+date:   2025-01-20 16:00:00 0000
 link: https://arxiv.org/abs/2501.09136
 categories: AGI
 tags: nlu rag survey feature
