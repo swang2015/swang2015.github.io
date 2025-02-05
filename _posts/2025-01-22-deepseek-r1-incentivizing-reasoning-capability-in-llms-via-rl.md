@@ -4,7 +4,11 @@ title:  "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforceme
 date:   2025-01-22 19:00:00 0000
 link: https://github.com/deepseek-ai/DeepSeek-R1
 categories: AGI
-tags: nlu llm rl feature pretrained-models
+tags: nlu llm rl pretrained-models
 ---
 
-Abstract: We introduce our first-generation reasoning models, DeepSeek-R1-Zero and DeepSeek-R1. DeepSeek-R1-Zero, a model trained via large-scale reinforcement learning (RL) without supervised fine-tuning (SFT) as a preliminary step, demonstrates remarkable reasoning capabilities. Through RL, DeepSeek-R1-Zero naturally emerges with numerous powerful and intriguing reasoning behaviors. However, it encounters challenges such as poor readability, and language mixing. To address these issues and further enhance reasoning performance, we introduce DeepSeek-R1, which incorporates multi-stage training and cold-start data before RL. DeepSeek-R1 achieves performance comparable to OpenAI-o1-1217 on reasoning tasks. To support the research community, we open-source DeepSeek-R1-Zero, DeepSeek-R1, and six dense models (1.5B, 7B, 8B, 14B, 32B, 70B) distilled from DeepSeek-R1 based on Qwen and Llama.
+In this study, we demonstrate that reasoning capabilities can be significantly improved through large-scale reinforcement learning (GRPO), even without using supervised fine-tuning as a cold start. Furthermore, performance can be further enhanced with the inclusion of a small amount of cold-start data. We present:
+(1) DeepSeek-R1-Zero, which applies RL directly to the base model without any SFT data, and
+(2) DeepSeek-R1, which applies RL starting from a checkpoint fine-tuned with thousands of long Chain-of-Thought (CoT) examples. 
+(3) Distill the reasoning capability from DeepSeek-R1 to small dense models.
+To support the research community, we open-source DeepSeek-R1-Zero, DeepSeek-R1, and six dense models (1.5B, 7B, 8B, 14B, 32B, 70B) distilled from DeepSeek-R1 based on Qwen and Llama.
