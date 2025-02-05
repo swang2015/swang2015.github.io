@@ -200,7 +200,7 @@ pre.console{
 	color: #333;
 }
 
-@media (max-width: 539px) {
+@media (max-width: 767.98px) {
 	#back_top { display: none !important; }
 }
 
