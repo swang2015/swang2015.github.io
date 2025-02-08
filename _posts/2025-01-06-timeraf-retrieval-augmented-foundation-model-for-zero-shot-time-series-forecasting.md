@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "TimeRAF: Retrieval-Augmented Foundation model for Zero-shot Time Series Forecasting"
-date:   2025-01-26 04:00:00 0000
+date:   2025-01-06 04:00:00 0000
 link: https://arxiv.org/abs/2412.20810
 categories: ML
 tags: time-series rag
