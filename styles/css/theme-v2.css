@@ -1,21 +1,17 @@
-a.noactive:hover,
-a.noactive:focus {
-	text-decoration: none;
-}
-
 .main a {
 	color: #67A73C;
+	text-decoration: none;
 }
 
 .main a:hover,
 .main a:focus {
 	color: #687E44;
+	text-decoration: none;
 }
 
 .docs-title {
-	padding-top: 0;
-	padding-bottom: 0;
-	margin: 8px 0 10px 0;
+	padding: 8px 0 10px 0;
+	margin: 0;
     font-size: 26px;
     font-weight: bolder;
 }
@@ -71,6 +67,10 @@ a.noactive:focus {
 	color: #696249;
 }
 
+.carousel-control {
+	font-size: 20px;
+}
+
 .carousel-control .fa-chevron-left,
 .carousel-control .fa-chevron-right {
 	position: absolute;
@@ -91,9 +91,18 @@ a.noactive:focus {
 	margin-right: -10px;
 }
 
+.about-link {
+	margin-top: 8px;
+}
+
+.about-intro {
+	width: 299px;
+	margin: auto;
+}
+
 .post-block {
 	background-color: #eee;
-	padding: 5px 15px;
+	padding: 15px 15px 5px 15px;
 	margin-top: 10px;
 	margin-bottom: 15px;
 	text-align: left;
@@ -214,9 +223,18 @@ pre.console{
 	font-size: 22px;
 }
 
+.page-block {
+	padding-top: 15px;
+}
+
+.tags-expo-list {
+	margin-bottom: 18px;
+}
+
 .tag-post-list {
 	padding: 0;
 	list-style: none;
+	margin-bottom: 12px;
 }
 
 .tag-title {

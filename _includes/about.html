@@ -1,0 +1,12 @@
+<div class="offcanvas offcanvas-end" tabindex="-1" id="about" aria-labelledby="aboutLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel">About</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="card about-intro">
+            <img src="{{ '/images/about.jpg' | prepend: site.baseurl }}" class="card-img-top" alt="{{ site.username}}">
+            <div class="card-body"><p class="card-text">{{ site.description }}</p></div>
+        </div>
+    </div>
+</div>

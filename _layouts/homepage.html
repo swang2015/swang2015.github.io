@@ -8,6 +8,9 @@
 	{% include slider.html %}
 
 	<div class="container">
+		<div class="about-link text-center">
+			<a data-bs-toggle="offcanvas" href="#about" role="button" aria-controls="about">About</a>
+		</div>
 		<div class="row">
 			<div class="col-md-12">
 				{{ content }}
@@ -16,6 +19,7 @@
 	</div>
 
 	{% include footer.html %}
+	{% include about.html %}
 
 </body>
 

@@ -2,48 +2,46 @@
 layout: homepage
 ---
 
-<div class="bottom-space center-block">
-  <ul class="post-list">
-    {% for my_post in paginator.posts %}
-      <li class="post-block text-center" div style="cursor: pointer;" onclick="window.location='{{ my_post.url | prepend: site.baseurl }}';">
-        <p class="post-title-line">
-          {% if my_post.link %}<a href="{{ my_post.link }}" class="noactive post-title text-capitalize">{{ my_post.title }}</a>
-          {% else %}<a href="{{ my_post.url }}" class="noactive post-title text-capitalize">{{ my_post.title }}</a>
-          {% endif %}
-          <span class="tab-space"></span>
-          <span class="post-date">{{ my_post.date | date: "%B %-d, %Y" }}</span>
-        </p>
-        <p class="post-meta">
-          {% if my_post.tags[0] %}
-          {% for tag in my_post.tags %}{% if tag != "feature" %}
-          <a href="{{ site.baseurl }}/tags#{{ tag }}" class="post-tags noactive text-lowercase">{{ tag }}</a>
-          {% endif %}{% endfor %}
-          {% endif %}
-          <span class="tab-space"></span>
-          <a class="post-comment-label noactive" href="{{ my_post.url | prepend: site.baseurl }}#disqus_thread"></a>
-        </p>
-      </li>
-    {% endfor %}
-  </ul>
-  <div class="clearfix paginate">
-    <p class="pull-left">
-      {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-      <a href="/" class="noactive">&laquo; NEWER POSTS</a>
-      {% else %}
-      <a href="{{ paginator.previous_page_path }}" class="noactive">&laquo; NEWER POSTS</a>
-      {% endif %}
-      {% else %}
-      <span>&laquo; NEWER POSTS</span>
-      {% endif %}
-    </p>
-      
-    <p class="pull-right noactive">
-      {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="noactive">OLDER POSTS &raquo;</a>
-      {% else %}
-      <span>OLDER POSTS &raquo;</span>
-      {% endif %}
-    </p>
-  </div>
+<ul class="post-list">
+  {% for my_post in paginator.posts %}
+    <li class="post-block" div style="cursor: pointer;" onclick="window.location='{{ my_post.url | prepend: site.baseurl }}';">
+      <p class="post-title-line">
+        {% if my_post.link %}<a href="{{ my_post.link }}" class="post-title text-capitalize">{{ my_post.title }}</a>
+        {% else %}<a href="{{ my_post.url }}" class="post-title text-capitalize">{{ my_post.title }}</a>
+        {% endif %}
+        <span class="tab-space"></span>
+        <span class="post-date">{{ my_post.date | date: "%B %-d, %Y" }}</span>
+      </p>
+      <p class="post-meta">
+        {% if my_post.tags[0] %}
+        {% for tag in my_post.tags %}{% if tag != "feature" %}
+        <a href="{{ site.baseurl }}/tags#{{ tag }}" class="post-tags text-lowercase">{{ tag }}</a>
+        {% endif %}{% endfor %}
+        {% endif %}
+        <span class="tab-space"></span>
+        <a class="post-comment-label" href="{{ my_post.url | prepend: site.baseurl }}#disqus_thread"></a>
+      </p>
+    </li>
+  {% endfor %}
+</ul>
+<div class="clearfix paginate">
+  <p class="pull-left">
+    {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+    <a href="/">&laquo; NEWER POSTS</a>
+    {% else %}
+    <a href="{{ paginator.previous_page_path }}">&laquo; NEWER POSTS</a>
+    {% endif %}
+    {% else %}
+    <span>&laquo; NEWER POSTS</span>
+    {% endif %}
+  </p>
+    
+  <p class="pull-right">
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}">OLDER POSTS &raquo;</a>
+    {% else %}
+    <span>OLDER POSTS &raquo;</span>
+    {% endif %}
+  </p>
 </div>

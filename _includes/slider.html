@@ -1,6 +1,6 @@
-<div class="container bottom-space">
-	<div id="carousel-main" class="carousel slide" data-ride="carousel">
-		{% if site.tags.feature.size > 3 %}
+<div class="container">
+    <div id="carousel-main" class="carousel slide" data-bs-ride="carousel">
+        {% if site.tags.feature.size > 3 %}
 		{% assign length = 3 %}
 		{% else %}
 		{% assign length = site.tags.feature.size %}
@@ -10,30 +10,28 @@
 		{{ 'now' | date: "%s" }}
 		{% endcapture %}
 
-		<!-- Wrapper for slides -->
-		<div class="carousel-inner" role="listbox">
+        <div class="carousel-inner">
 			{% for i in (0..length) %}{% unless forloop.last %}
 			{% assign mypost = site.tags.feature[i] %}
-			<div class="item {% if i == 0 %} active {% endif %} slider-image" style="background:url('/images/bg/bg{{ i }}.jpg') no-repeat center center; background-size:cover;">
-				<div class="carousel-caption slider-title-background">
+            <div class="carousel-item {% if i == 0 %} active {% endif %} slider-image" style="background:url('/images/bg/bg{{ i }}.jpg') no-repeat center center; background-size:cover;">
+                <div class="carousel-caption slider-title-background">
 					<h2 class="slider-title text-uppercase">
-						<a href="{{ mypost.url | prepend: site.baseurl }}" class="noactive">
+						<a href="{{ mypost.url | prepend: site.baseurl }}">
 							{{ mypost.title }}
 						</a>
 					</h2>
 				</div>
-			</div>
-			{% endunless %}{% endfor %}
-		</div>
+            </div>
+            {% endunless %}{% endfor %}
+        </div>
 
-		<!-- Controls -->
-		<a class="left carousel-control" href="#carousel-main" role="button" data-slide="prev">
-			<span class="fa fa-chevron-left" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="right carousel-control" href="#carousel-main" role="button" data-slide="next">
-			<span class="fa fa-chevron-right" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
-	</div>
+        <button class="carousel-control-prev carousel-control" type="button" data-bs-target="#carousel-main" data-bs-slide="prev">
+            <span class="fa fa-chevron-left" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next carousel-control" type="button" data-bs-target="#carousel-main" data-bs-slide="next">
+            <span class="fa fa-chevron-right" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 </div>
