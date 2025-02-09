@@ -179,8 +179,7 @@ pre.console{
 }
 
 .paginate {
-    padding-top: 5px;
-    padding-bottom: 5px;
+	padding-bottom: 5px;
 }
 
 #back_top {
@@ -206,7 +205,6 @@ pre.console{
 }
 
 .footer {
-	margin-top: 15px;
 	padding-top: 5px;
 	background: #151B1F;
 	color: #7B7B7B;
