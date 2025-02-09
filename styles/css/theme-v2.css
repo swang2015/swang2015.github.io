@@ -91,8 +91,13 @@
 	margin-right: -10px;
 }
 
-.about {
+.about-link {
 	margin-top: 8px;
+}
+
+.about-intro {
+	width: 299px;
+	margin: auto;
 }
 
 .post-block {
