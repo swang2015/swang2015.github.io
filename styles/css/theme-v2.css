@@ -1,21 +1,17 @@
-a.noactive:hover,
-a.noactive:focus {
-	text-decoration: none;
-}
-
 .main a {
 	color: #67A73C;
+	text-decoration: none;
 }
 
 .main a:hover,
 .main a:focus {
 	color: #687E44;
+	text-decoration: none;
 }
 
 .docs-title {
-	padding-top: 0;
-	padding-bottom: 0;
-	margin: 8px 0 10px 0;
+	padding: 8px 0 10px 0;
+	margin: 0;
     font-size: 26px;
     font-weight: bolder;
 }
