@@ -3,7 +3,7 @@ layout: post
 title:  "Genesis: A Generative and Universal Physics Engine for Robotics and Beyond"
 date:   2025-01-30 04:00:00 0000
 link: https://genesis-embodied-ai.github.io
-categories: Ominiverse
+categories: Omniverse
 tags: physical-ai codebase robotics feature
 ---
 

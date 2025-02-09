@@ -3,7 +3,7 @@ layout: post
 title:  "NVIDIA Cosmos: a world foundation model platform"
 date:   2025-01-20 16:10:00 0000
 link: https://github.com/NVIDIA/Cosmos
-category: Ominiverse
+category: Omniverse
 tags: physical-ai codebase pretrained-models
 ---
 
