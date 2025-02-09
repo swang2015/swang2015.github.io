@@ -25,25 +25,25 @@ layout: homepage
       </li>
     {% endfor %}
   </ul>
-  <div class="paginate">
+  <div class="clearfix paginate">
     <p class="pull-left">
-    {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-    <a href="/">&laquo; NEWER POSTS</a>
-    {% else %}
-    <a href="{{ paginator.previous_page_path }}">&laquo; NEWER POSTS</a>
-    {% endif %}
-    {% else %}
-    <span>&laquo; NEWER POSTS</span>
-    {% endif %}
+      {% if paginator.previous_page %}
+      {% if paginator.page == 2 %}
+      <a href="/" class="noactive">&laquo; NEWER POSTS</a>
+      {% else %}
+      <a href="{{ paginator.previous_page_path }}" class="noactive">&laquo; NEWER POSTS</a>
+      {% endif %}
+      {% else %}
+      <span>&laquo; NEWER POSTS</span>
+      {% endif %}
     </p>
-
-    <p class="pull-right">
-    {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}">OLDER POSTS &raquo;</a>
-    {% else %}
-    <span>OLDER POSTS &raquo;</span>
-    {% endif %}
+      
+    <p class="pull-right noactive">
+      {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="noactive">OLDER POSTS &raquo;</a>
+      {% else %}
+      <span>OLDER POSTS &raquo;</span>
+      {% endif %}
     </p>
   </div>
 </div>

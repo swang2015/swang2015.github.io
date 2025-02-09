@@ -2,7 +2,7 @@
 layout: post
 title:  "Five Open-source LLM-based Web Scrapers"
 date:   2025-01-22 00:00:00 0000
-categories: random
+categories: AGI
 tags: llm codebase web-scraping collections
 ---
 
