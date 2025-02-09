@@ -67,6 +67,10 @@
 	color: #696249;
 }
 
+.carousel-control {
+	font-size: 20px;
+}
+
 .carousel-control .fa-chevron-left,
 .carousel-control .fa-chevron-right {
 	position: absolute;
