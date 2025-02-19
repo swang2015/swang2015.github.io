@@ -12,7 +12,6 @@ Current machine learning models for vision are often highly specialized and limi
 We take a step in this direction and propose a multimodal training scheme called 4M, short for Massively Multimodal Masked Modeling. It consists of training a single unified Transformer encoder-decoder using a masked modeling objective across a wide range of input/output modalities — including text, images, geometric, and semantic modalities, as well as neural network feature maps. 4M achieves scalability by unifying the representation space of all modalities through mapping them into discrete tokens and performing multimodal masked modeling on a small randomized subset of tokens.
 
 4M leads to models that exhibit several key capabilities:
-
 1. they can perform a diverse set of vision tasks out of the box,
 2. they excel when fine-tuned for unseen downstream tasks or new input modalities, and
 3. they can function as a generative model that can be conditioned on arbitrary modalities, enabling a wide variety of expressive multimodal editing capabilities with remarkable flexibility.
