@@ -4,7 +4,7 @@ title:  "Genesis: A Generative and Universal Physics Engine for Robotics and Bey
 date:   2025-01-30 04:00:00 0000
 link: https://genesis-embodied-ai.github.io
 categories: Omniverse
-tags: physical-ai codebase robotics feature
+tags: physical-ai codebase embodied-ai feature
 ---
 
 Genesis is a physics platform designed for general-purpose Robotics/Embodied AI/Physical AI applications. It is simultaneously multiple things:

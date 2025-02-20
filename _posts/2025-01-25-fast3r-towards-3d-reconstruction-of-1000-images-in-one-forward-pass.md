@@ -3,7 +3,7 @@ layout: post
 title:  "Fast3R: Towards 3D Reconstruction of 1000+ Images in One Forward Pass"
 date:   2025-01-25 23:00:00 0000
 link: https://arxiv.org/abs/2501.13928
-categories: CV
+categories: Omniverse
 tags: 3d-modelling
 ---
 

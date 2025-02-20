@@ -3,8 +3,8 @@ layout: post
 title:  "Controllable Human-Object Interaction Synthesis"
 date:   2025-01-06 11:20:00 0000
 link: https://github.com/lijiaman/chois_release
-categories: Omniverse
-tags: physical-ai codebase
+categories: CV
+tags: embodied-ai codebase
 ---
 
 Synthesizing semantic-aware, long-horizon, human-object interaction is critical to simulate realistic human behaviors. In this work, we address the challenging problem of generating synchronized object motion and human motion guided by language descriptions in 3D scenes.
