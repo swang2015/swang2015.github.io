@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Recommender Systems Meet Large Language Model Agents: A Survey"
+date:   2025-02-01 19:50:00 0000
+link: https://www.researchgate.net/publication/386552275_Recommender_Systems_Meet_Large_Language_Model_Agents_A_Survey
+categories: AGI
+tags: llm recommender survey
+---
+
+Abstract: In recent years, the integration of Large Language Models (LLMs) and Recommender Systems (RS) has revolutionized the way personalized and intelligent user experiences are delivered. This survey provides an extensive review of critical challenges, current landscape, and future directions in the collaboration between LLM-based AI agents (LLM Agent) and recommender systems. We begin with an introduction to the foundational knowledge, exploring the components of LLM agents and the applications of LLMs in recommender systems. The survey then delves into the symbiotic relationship between LLM agents and recommender systems, illustrating how LLM agents enhance recommender systems and how recommender systems support better LLM agents. Specifically, we discuss the overall architectures for designing LLM agents for recommendation, encompassing profile, memory, planning, and action components, along with multi-agent collaboration. Conversely, we investigate how recommender systems contribute to LLM agents, focusing on areas such as memory recommendation, plan recommendation, tool recommendation, agent recommendation, and personalized LLMs and LLM agents. Furthermore, a critical evaluation of trustworthy AI agents and recommender systems follows, addressing key issues of safety, explainability, fairness, and privacy. Finally, we propose potential future research directions, highlighting emerging trends and opportunities in the intersection of AI agents and recommender systems. This survey concludes by summarizing the key insights of current research and outlining promising avenues for future exploration in this rapidly evolving field. A curated collection of relevant papers for this survey is available in the GitHub repository: https://github.com/agiresearch/AgentRecSys.

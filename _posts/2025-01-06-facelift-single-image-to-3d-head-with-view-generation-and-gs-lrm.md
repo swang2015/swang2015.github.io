@@ -3,7 +3,7 @@ layout: post
 title:  "FaceLift: Single Image to 3D Head with View Generation and GS-LRM"
 date:   2025-01-06 02:00:00 0000
 link: https://arxiv.org/abs/2412.17812
-categories: CV
+categories: Omniverse
 tags: 3d-modelling 
 ---
 
