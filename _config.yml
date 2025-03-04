@@ -1,11 +1,11 @@
 # Site settings
 title: Latest Tech News
-slogan: Ashley's Blog
+slogan: Ashley's Pick
 username: Ashley Wang
 email: swang2015@gmail.com
 baseurl: ""
 url: "http://ashleywang.me"
-description: "I'm Ashley Wang, a machine learning engineer and mother of two. I'm reading news about <b>data science, CV, NLU, robotics, quantum computing, biomedical engineering, innovative products and projects</b>... and would like to share with you!"
+description: "I'm Ashley Wang, a machine learning engineer and mother of two. I'm reading latest technology news about <b>data science, foundation models, 2d/3d modelling, physical ai, embodied ai, quantum computing, biomedical engineering, innovative products</b>... and would like to share with you!"
 
 # Build settings
 markdown: kramdown
