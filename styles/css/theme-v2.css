@@ -213,8 +213,13 @@ pre.console{
 	#back_top { display: none !important; }
 }
 
-.footer {
+.visitor-tracker {
+	width: 200px;
 	padding-top: 5px;
+}
+
+.footer {
+	padding-top: 10px;
 	background: #151B1F;
 	color: #7B7B7B;
 }
