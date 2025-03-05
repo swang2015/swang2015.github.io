@@ -218,6 +218,10 @@ pre.console{
 	padding-top: 5px;
 }
 
+@media (max-width: 767.98px) {
+	.visitor-tracker { display: none !important; }
+}
+
 .footer {
 	padding-top: 10px;
 	background: #151B1F;
