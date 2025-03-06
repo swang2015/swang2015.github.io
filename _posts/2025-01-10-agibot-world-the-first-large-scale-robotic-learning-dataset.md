@@ -4,7 +4,7 @@ title:  "AgiBot World: the first large-scale robotic learning dataset"
 date:   2025-01-10 22:00:00 0000
 link: https://agibot-world.com
 categories: Robotics
-tags: dataset robotics
+tags: dataset embodied-ai
 ---
 
 Key Features
