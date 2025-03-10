@@ -5,30 +5,39 @@ title: Tags
 
 <article class="text-center page-block">
 	<h2 class="page-title">
-		<a href="{{ page.url | prepend: site.baseurl }}" class="noactive">{{ page.title }}</a>
+		<a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
 	</h2>
 
 	<div class="post-content">
-		<div class="tags-expo-list">
+		<div class="tags-expo-list d-lg-none">
 			{% for tag in site.tags %}{% if tag[0] != "feature" %}
-			<a href="#{{ tag[0] | slugify }}" class="post-tags noactive text-lowercase">{{ tag[0] }}</a>
+			<a href="#{{ tag[0] | slugify }}" class="post-tags text-lowercase">{{ tag[0] }}</a>
 			{% endif %}{% endfor %}
 		</div>
-		<div>
-			{% for tag in site.tags %}{% if tag[0] != "feature" %}
-			<h3 id="{{ tag[0] | slugify }}" class="tag-title text-lowercase">{{ tag[0] }}</h3>
-			<ul class="tag-post-list">
-				{% for post in tag[1] %}
-				<li>
-					<a class="noactive tag-post-title text-capitalize" href="{{ post.url | prepend: site.baseurl }}">
-						{{ post.title }}
-						<span class="tab-space"></span>
-						<span class="tag-post-date">{{ post.date | date_to_string }}</span>
-					</a>
-				</li>
-				{% endfor %}
-			</ul>
-			{% endif %}{% endfor %}
+		<div class="row">
+			<div class="col-lg-10">
+				{% for tag in site.tags %}{% if tag[0] != "feature" %}
+				<h3 id="{{ tag[0] | slugify }}" class="tag-title text-lowercase">{{ tag[0] }}</h3>
+				<ul class="tag-post-list">
+					{% for post in tag[1] %}
+					<li>
+						<a class="tag-post-title text-capitalize" href="{{ post.url | prepend: site.baseurl }}">
+							{{ post.title }}
+							<span class="tab-space"></span>
+							<span class="tag-post-date">{{ post.date | date_to_string }}</span>
+						</a>
+					</li>
+					{% endfor %}
+				</ul>
+				{% endif %}{% endfor %}
+			</div>
+			<div class="col-lg-2 d-none d-lg-block">
+				<div class="list-group tag-list">
+					{% for tag in site.tags %}{% if tag[0] != "feature" %}
+					<a class="list-group-item list-group-item-action text-lowercase" href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+					{% endif %}{% endfor %}
+				</div>
+			</div>
 		</div>
 	</div>
 </article>

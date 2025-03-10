@@ -5,7 +5,7 @@ layout: default
 	<div class="col-md-12">
 		<article itemscope itemtype="http://schema.org/BlogPosting" class="post-block">
 			<h3 class="post-title" itemprop="name headline">
-				<a href="{{ page.link }}" class="noactive text-capitalize">{{ page.title }}</a>
+				<a href="{{ page.link }}" class="text-capitalize">{{ page.title }}</a>
 				<span class="tab-space"></span>
 				<small class="post-date">
 					<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
@@ -19,7 +19,7 @@ layout: default
 			<p class="pull-left">
 				{% if page.tags[0] %}
 				{% for tag in page.tags %}{% if tag != "feature" %}
-				<a href="{{ site.baseurl }}/tags#{{ tag }}" class="post-tags text-lowercase noactive">{{ tag }}</a>
+				<a href="{{ site.baseurl }}/tags#{{ tag }}" class="post-tags text-lowercase">{{ tag }}</a>
 				{% endif %}{% endfor %}
 				{% endif %}
 			</p>
