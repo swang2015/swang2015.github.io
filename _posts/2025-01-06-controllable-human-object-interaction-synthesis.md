@@ -3,7 +3,7 @@ layout: post
 title:  "Controllable Human-Object Interaction Synthesis"
 date:   2025-01-06 11:20:00 0000
 link: https://github.com/lijiaman/chois_release
-categories: CV
+categories: Robotics
 tags: embodied-ai codebase
 ---
 

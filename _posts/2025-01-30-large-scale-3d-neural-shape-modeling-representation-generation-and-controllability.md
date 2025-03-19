@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Large-scale 3d neural shape modeling : representation, generation, and controllability"
+title:  "Large-scale 3d neural shape modeling: representation, generation, and controllability"
 date:   2025-01-30 12:35:00 0000
 link: https://repository.lib.cuhk.edu.hk/en/item/cuhk-3550245
-categories: Omniverse
+categories: AGI
 tags: 3d-modelling genai
 ---
 

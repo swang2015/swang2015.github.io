@@ -3,7 +3,7 @@ layout: post
 title:  "GVA: Reconstructing Vivid 3D Gaussian Avatars from Monocular Videos"
 date:   2025-01-06 17:30:00 0000
 link: https://arxiv.org/abs/2402.16607
-categories: Omniverse
+categories: AGI
 tags: 3d-modelling
 ---
 
