@@ -2,7 +2,7 @@
 layout: post
 title:  "Distilling step-by-step: Outperforming larger language models with less training data and smaller model sizes"
 date:   2025-03-20 13:15:00 0000
-link: https://google.com/
+link: https://research.google/blog/distilling-step-by-step-outperforming-larger-language-models-with-less-training-data-and-smaller-model-sizes/
 categories: AGI
 tags: llm codebase
 ---
