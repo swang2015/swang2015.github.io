@@ -3,7 +3,7 @@ layout: post
 title:  "MIT CS Course: Generative AI with Stochastic Differential Equations"
 date:   2025-03-11 22:00:00 0000
 link: https://diffusion.csail.mit.edu
-categories: CV
+categories: AGI
 tags: genai tutorial
 ---
 

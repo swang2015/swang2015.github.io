@@ -3,7 +3,7 @@ layout: post
 title:  "SHMT: Self-supervised Hierarchical Makeup Transfer via Latent Diffusion Models"
 date:   2025-02-01 17:50:00 0000
 link: https://github.com/Snowfallingplum/SHMT
-categories: CV
+categories: AGI
 tags: genai codebase pretrained-models
 ---
 

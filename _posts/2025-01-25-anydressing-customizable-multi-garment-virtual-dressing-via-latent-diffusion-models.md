@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "AnyDressing: Customizable Multi-Garment Virtual Dressing via Latent Diffusion Models"
-date:   2025-01-25 XX:00:00 0000
+date:   2025-01-25 15:00:00 0000
 link: https://arxiv.org/abs/2412.04146
-categories: CV
+categories: AGI
 tags: genai tbc
 ---
 

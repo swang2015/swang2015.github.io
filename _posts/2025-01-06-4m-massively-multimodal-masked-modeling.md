@@ -3,8 +3,8 @@ layout: post
 title:  "4M: Massively Multimodal Masked Modeling"
 date:   2025-01-06 04:30:00 0000
 link: https://4m.epfl.ch
-categories: CV
-tags: genai codebase pretrained-models
+categories: AGI
+tags: cv codebase pretrained-models multimodal
 ---
 
 Current machine learning models for vision are often highly specialized and limited to a single modality and task. In contrast, recent large language models exhibit a wide range of capabilities, hinting at a possibility for similarly versatile models in computer vision.
