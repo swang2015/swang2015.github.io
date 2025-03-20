@@ -3,7 +3,7 @@ layout: post
 title:  "Five Open-source LLM-based Web Scrapers"
 date:   2025-01-22 00:00:00 0000
 categories: AGI
-tags: codebase web-scraping collections
+tags: codebase etl collections
 ---
 
 - Crawl4AI: https://github.com/unclecode/crawl4ai
