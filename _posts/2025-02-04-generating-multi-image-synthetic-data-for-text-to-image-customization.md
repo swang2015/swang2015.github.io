@@ -3,7 +3,7 @@ layout: post
 title:  "Generating Multi-Image Synthetic Data for Text-to-Image Customization"
 date:   2025-02-04 20:05:00 0000
 link: https://github.com/nupurkmr9/syncd
-categories: CV
+categories: AGI
 tags: codebase dataset genai
 ---
 

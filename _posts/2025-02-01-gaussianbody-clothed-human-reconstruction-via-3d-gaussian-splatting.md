@@ -3,7 +3,7 @@ layout: post
 title:  "GaussianBody: Clothed Human Reconstruction via 3d Gaussian Splatting"
 date:   2025-02-01 16:40:00 0000
 link: https://arxiv.org/abs/2401.09720
-categories: Omniverse
+categories: AGI
 tags: 3d-modelling
 ---
 

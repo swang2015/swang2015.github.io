@@ -4,7 +4,7 @@ title:  "LangGraph 0.3 Release: Prebuilt Agents"
 date:   2025-02-28 17:25:00 0000
 link: https://blog.langchain.dev/langgraph-0-3-release-prebuilt-agents/
 categories: AGI
-tags: llm
+tags: llm industry
 ---
 
 LangGraph introduces a new set of prebuilt agents built on top of LangGraph:
