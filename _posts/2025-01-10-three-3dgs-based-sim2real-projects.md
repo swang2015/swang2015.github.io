@@ -2,7 +2,7 @@
 layout: post
 title:  "Three 3DGS-based Sim2Real Projects"
 date:   2025-01-10 21:00:00 0000
-link: https://google.com/
+link: 
 categories: Robotics
 tags: collections embodied-ai codebase
 ---
