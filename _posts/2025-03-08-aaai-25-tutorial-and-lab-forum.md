@@ -4,7 +4,7 @@ title:  "AAAI-25 Tutorial and Lab Forum"
 date:   2025-03-08 17:15:00 0000
 link: https://aaai.org/conference/aaai/aaai-25/tutorial-and-lab-list/
 categories: AGI
-tags: tutorial collections feature conference
+tags: book-tutorial collections feature conference
 ---
 
 - TH04: Foundation Models meet Embodied Agents: https://foundation-models-meet-embodied-agents.github.io
